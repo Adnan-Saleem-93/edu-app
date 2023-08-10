@@ -14,6 +14,7 @@ const images = [
 		height: 61.1,
 		top: 25,
 		left: 40,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorCloud,
@@ -22,6 +23,7 @@ const images = [
 		height: 76.3,
 		top: 49,
 		right: 55.5,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorCurl1,
@@ -30,14 +32,16 @@ const images = [
 		height: 37.8,
 		top: 237,
 		left: 73,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorCurl2,
 		alt: "vector-curl-2",
 		width: 52.6,
 		height: 28.1,
-		top: 248,
-		right: 186,
+		top: 179,
+		right: 43.1,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorCloud,
@@ -46,6 +50,7 @@ const images = [
 		height: 61.1,
 		top: 238,
 		right: 60.3,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorCloud,
@@ -54,6 +59,7 @@ const images = [
 		height: 61.1,
 		top: 401,
 		left: -32.5,
+		customClasses: "z-0",
 	},
 	{
 		src: VectorGreen2,
@@ -62,6 +68,8 @@ const images = [
 		height: 202,
 		bottom: 0,
 		left: 0,
+		position: "fixed",
+		customClasses: "z-0",
 	},
 	{
 		src: VectorBlue2,
@@ -70,6 +78,8 @@ const images = [
 		height: 202,
 		bottom: 0,
 		right: 0,
+		position: "fixed",
+		customClasses: "z-0",
 	},
 ];
 

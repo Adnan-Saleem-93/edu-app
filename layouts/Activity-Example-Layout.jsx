@@ -69,16 +69,7 @@ const images = [
 		height: 313,
 		bottom: 0,
 		right: 0,
-		position: "absolute",
-	},
-	{
-		src: Beach,
-		alt: "beach",
-		width: 395,
-		height: 247,
-		top: 154,
-		left: 400,
-		position: "absolute",
+		position: "fixed",
 	},
 ];
 

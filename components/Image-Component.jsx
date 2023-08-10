@@ -1,3 +1,4 @@
+import { pxToRem } from "@/utils/functions";
 import Image from "next/image";
 
 const ImageComponent = ({
@@ -10,17 +11,23 @@ const ImageComponent = ({
 	right = null,
 	bottom = null,
 	position = "absolute",
+	customClasses = "",
+	zIndex = 0,
 }) => {
 	return (
 		<Image
 			src={src}
 			alt={alt}
-			className={`${position} z-0 w-[${width}px] h-[${height}px] flex-shrink-0`}
+			className={`${customClasses} w-[${pxToRem(width)}] h-[${pxToRem(
+				height
+			)}] flex-shrink-0`}
 			style={{
 				top,
 				left,
 				right,
 				bottom,
+				position,
+				zIndex,
 			}}
 		/>
 	);
