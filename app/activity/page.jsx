@@ -10,6 +10,7 @@ import Girl from "/assets/SVGs/girl.svg";
 import Boy from "/assets/SVGs/boy.svg";
 import VectorBlue2 from "/assets/SVGs/vector-blue-2.svg";
 import VectorGreen2 from "/assets/SVGs/vector-green-2.svg";
+import Link from "next/link";
 
 const Activity = () => {
 	const { push } = useRouter();
@@ -75,11 +76,13 @@ const Activity = () => {
 						/>
 					</article>
 					<article className="flex justify-between items-center w-[95%]">
-						<Button
-							text="Back"
-							customClasses="button--default "
-							clickAction={() => push("/", undefined, { shallow: true })}
-						/>
+						<Link href="/" style={{ zIndex: 10 }}>
+							<Button
+								text="Back"
+								customClasses="button--default "
+								// clickAction={() => push("/"}
+							/>
+						</Link>
 						<Button text="Next" customClasses="button--default uppercase" />
 					</article>
 				</section>

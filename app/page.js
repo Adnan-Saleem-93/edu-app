@@ -8,6 +8,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Beach from "/assets/SVGs/beach.svg";
 import VectorGreen from "/assets/SVGs/vector-green.svg";
+import Link from "next/link";
 
 export default function Home() {
 	const { push } = useRouter();
@@ -55,13 +56,15 @@ export default function Home() {
 							text="Back"
 							customClasses="button--default tracking-widest"
 						/>
-						<Button
-							text="Next"
-							customClasses="button--default tracking-widest uppercase"
-							clickAction={() =>
-								push("/activity", undefined, { shallow: true })
-							}
-						/>
+						<Link href="/activity">
+							<Button
+								text="Next"
+								customClasses="button--default tracking-widest uppercase"
+								// clickAction={() =>
+								// 	push("/activity", undefined, { shallow: true })
+								// }
+							/>
+						</Link>
 					</article>
 				</section>
 			</ExampleLayout>
