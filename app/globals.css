@@ -23,6 +23,6 @@ body {
 
 @layer components {
 	.button--default {
-		@apply bg-[#F5DCD5] hover:bg-[#e7cec8];
+		@apply bg-[#F5DCD5] hover:bg-[#e7cec8] tracking-widest;
 	}
 }

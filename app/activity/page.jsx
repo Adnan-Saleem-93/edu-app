@@ -5,9 +5,9 @@ import Text from "@/components/Text";
 import ActivityLayout from "@/layouts/Activity-Layout";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Group18 from "/assets/images/Group 18.png";
-import Group19 from "/assets/images/Group 19.png";
-import Group20 from "/assets/images/Group 20.png";
+import Paragraph from "/assets/SVGs/paragraph.svg";
+import Girl from "/assets/SVGs/girl.svg";
+import Boy from "/assets/SVGs/boy.svg";
 import VectorBlue2 from "/assets/SVGs/vector-blue-2.svg";
 import VectorGreen2 from "/assets/SVGs/vector-green-2.svg";
 
@@ -31,7 +31,7 @@ const Activity = () => {
 					<article className="my-2 z-0">
 						{/* paragraph image */}
 						<Image
-							src={Group18}
+							src={Paragraph}
 							alt="paragraph-image"
 							className={`relative flex-shrink-0`}
 							style={{ zIndex: -1 }}
@@ -52,14 +52,14 @@ const Activity = () => {
 						/>
 						{/* girl image */}
 						<Image
-							src={Group19}
+							src={Girl}
 							alt="girl-image"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 0, right: 0 }}
 						/>
 						{/* boy image */}
 						<Image
-							src={Group20}
+							src={Boy}
 							alt="boy-image"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 25, left: 70 }}
@@ -77,13 +77,10 @@ const Activity = () => {
 					<article className="flex justify-between items-center w-[95%]">
 						<Button
 							text="Back"
-							customClasses="button--default tracking-widest"
+							customClasses="button--default "
 							clickAction={() => push("/")}
 						/>
-						<Button
-							text="Next"
-							customClasses="button--default tracking-widest uppercase"
-						/>
+						<Button text="Next" customClasses="button--default uppercase" />
 					</article>
 				</section>
 			</ActivityLayout>

@@ -8,7 +8,6 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Beach from "/assets/images/Group.png";
 import VectorGreen from "/assets/SVGs/vector-green.svg";
-import { pxToRem } from "@/utils/functions";
 
 export default function Home() {
 	const { push } = useRouter();
