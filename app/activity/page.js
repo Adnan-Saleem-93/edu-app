@@ -3,8 +3,6 @@
 import Button from "@/components/Button";
 import Text from "@/components/Text";
 import ActivityLayout from "@/layouts/Activity-Layout";
-import Image from "next/image";
-import { useRouter } from "next/navigation";
 import Paragraph from "/assets/SVGs/paragraph.svg";
 import Girl from "/assets/SVGs/girl.svg";
 import Boy from "/assets/SVGs/boy.svg";
@@ -82,11 +80,7 @@ const Activity = () => {
 					</article>
 					<article className="flex justify-between items-center w-[95%]">
 						<Link href="/" style={{ zIndex: 10 }}>
-							<Button
-								text="Back"
-								customClasses="button--default "
-								clickAction={() => router.push("/")}
-							/>
+							<Button text="Back" customClasses="button--default " />
 						</Link>
 
 						<Button text="Next" customClasses="button--default uppercase" />
