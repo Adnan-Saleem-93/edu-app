@@ -62,18 +62,18 @@ const images = [
 		right: 253,
 		position: "absolute",
 	},
-	{
-		src: VectorGreen,
-		alt: "vector-green",
-		width: 372,
-		height: 313,
-		bottom: 0,
-		right: 0,
-		position: "fixed",
-	},
+	// {
+	// 	src: VectorGreen,
+	// 	alt: "vector-green",
+	// 	width: 372,
+	// 	height: 313,
+	// 	bottom: 0,
+	// 	right: 0,
+	// 	position: "fixed",
+	// },
 ];
 
-const ActivityExampleLayout = ({ children }) => {
+const ExampleLayout = ({ children }) => {
 	return (
 		<div className={`bg-[url('${BgImage}')] w-[1194px] h-[834px] relative`}>
 			{images.map((image, index) => {
@@ -84,4 +84,4 @@ const ActivityExampleLayout = ({ children }) => {
 	);
 };
 
-export default ActivityExampleLayout;
+export default ExampleLayout;

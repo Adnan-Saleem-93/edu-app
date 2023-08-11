@@ -8,6 +8,8 @@ import { useRouter } from "next/navigation";
 import Group18 from "/assets/images/Group 18.png";
 import Group19 from "/assets/images/Group 19.png";
 import Group20 from "/assets/images/Group 20.png";
+import VectorBlue2 from "/assets/SVGs/vector-blue-2.svg";
+import VectorGreen2 from "/assets/SVGs/vector-green-2.svg";
 import { pxToRem } from "@/utils/functions";
 
 const Activity = () => {
@@ -28,28 +30,39 @@ const Activity = () => {
 					</article>
 
 					<article className="my-2 z-0">
+						{/* paragraph image */}
 						<Image
 							src={Group18}
 							alt="group-18"
-							className={`relative z-0 w-[${pxToRem(830)}] h-[${pxToRem(
-								418
-							)}] flex-shrink-0`}
+							className={`relative flex-shrink-0`}
 							style={{ zIndex: -1 }}
 						/>
+						{/* blue vector image */}
+						<Image
+							src={VectorBlue2}
+							alt="group-19"
+							className={`absolute flex-shrink-0`}
+							style={{ zIndex: -1, bottom: 0, right: 0 }}
+						/>
+						{/* green vector image */}
+						<Image
+							src={VectorGreen2}
+							alt="group-19"
+							className={`absolute flex-shrink-0`}
+							style={{ zIndex: 1, bottom: 0, left: 0 }}
+						/>
+						{/* girl image */}
 						<Image
 							src={Group19}
 							alt="group-19"
-							className={`absolute z-0 w-[${pxToRem(830)}] h-[${pxToRem(
-								418
-							)}] flex-shrink-0`}
+							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 0, right: 0 }}
 						/>
+						{/* boy image */}
 						<Image
 							src={Group20}
 							alt="group-19"
-							className={`absolute z-0 w-[${pxToRem(830)}] h-[${pxToRem(
-								418
-							)}] flex-shrink-0`}
+							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 25, left: 70 }}
 						/>
 					</article>
