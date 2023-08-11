@@ -10,7 +10,6 @@ import Group19 from "/assets/images/Group 19.png";
 import Group20 from "/assets/images/Group 20.png";
 import VectorBlue2 from "/assets/SVGs/vector-blue-2.svg";
 import VectorGreen2 from "/assets/SVGs/vector-green-2.svg";
-import { pxToRem } from "@/utils/functions";
 
 const Activity = () => {
 	const { push } = useRouter();
@@ -33,35 +32,35 @@ const Activity = () => {
 						{/* paragraph image */}
 						<Image
 							src={Group18}
-							alt="group-18"
+							alt="paragraph-image"
 							className={`relative flex-shrink-0`}
 							style={{ zIndex: -1 }}
 						/>
 						{/* blue vector image */}
 						<Image
 							src={VectorBlue2}
-							alt="group-19"
+							alt="blue-vector"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 0, right: 0 }}
 						/>
 						{/* green vector image */}
 						<Image
 							src={VectorGreen2}
-							alt="group-19"
+							alt="green-vector"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: 1, bottom: 0, left: 0 }}
 						/>
 						{/* girl image */}
 						<Image
 							src={Group19}
-							alt="group-19"
+							alt="girl-image"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 0, right: 0 }}
 						/>
 						{/* boy image */}
 						<Image
 							src={Group20}
-							alt="group-19"
+							alt="boy-image"
 							className={`absolute flex-shrink-0`}
 							style={{ zIndex: -1, bottom: 25, left: 70 }}
 						/>

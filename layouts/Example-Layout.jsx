@@ -1,7 +1,5 @@
 import BgImage from "/assets/SVGs/background-1.svg";
 import VectorBlue from "/assets/SVGs/vector-blue.svg";
-import VectorGreen from "/assets/SVGs/vector-green.svg";
-import Beach from "/assets/images/Group.png";
 import VectorCloud from "/assets/SVGs/vector-cloud.svg";
 import VectorCurl1 from "/assets/SVGs/vector-curl-1.svg";
 import VectorCurl2 from "/assets/SVGs/vector-curl-2.svg";
@@ -62,15 +60,6 @@ const images = [
 		right: 253,
 		position: "absolute",
 	},
-	// {
-	// 	src: VectorGreen,
-	// 	alt: "vector-green",
-	// 	width: 372,
-	// 	height: 313,
-	// 	bottom: 0,
-	// 	right: 0,
-	// 	position: "fixed",
-	// },
 ];
 
 const ExampleLayout = ({ children }) => {
