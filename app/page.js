@@ -6,7 +6,7 @@ import Text from "@/components/Text";
 import ExampleLayout from "@/layouts/Example-Layout";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import Beach from "/assets/images/Group.png";
+import Beach from "/assets/SVGs/beach.svg";
 import VectorGreen from "/assets/SVGs/vector-green.svg";
 
 export default function Home() {
