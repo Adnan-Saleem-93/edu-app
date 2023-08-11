@@ -78,7 +78,7 @@ const Activity = () => {
 						<Button
 							text="Back"
 							customClasses="button--default "
-							clickAction={() => router.replace("/")}
+							clickAction={() => router.push("/")}
 						/>
 
 						<Button text="Next" customClasses="button--default uppercase" />

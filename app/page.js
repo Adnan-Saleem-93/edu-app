@@ -56,7 +56,7 @@ export default function Home() {
 						<Button
 							text="Next"
 							customClasses="button--default uppercase"
-							clickAction={() => router.replace("/activity")}
+							clickAction={() => router.push("/activity")}
 						/>
 					</article>
 				</section>
