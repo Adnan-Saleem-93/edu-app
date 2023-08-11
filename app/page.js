@@ -56,7 +56,7 @@ export default function Home() {
 							text="Back"
 							customClasses="button--default tracking-widest"
 						/>
-						<Link href="/activity">
+						<Link href="activity">
 							<Button
 								text="Next"
 								customClasses="button--default tracking-widest uppercase"
