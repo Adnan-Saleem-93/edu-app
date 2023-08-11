@@ -29,13 +29,6 @@ const images = [
 		right: 0,
 	},
 	{
-		src: Girl,
-		alt: "girl-image",
-		position: "absolute",
-		bottom: 0,
-		right: 0,
-	},
-	{
 		src: Boy,
 		alt: "boy-image",
 		position: "absolute",
@@ -48,6 +41,13 @@ const images = [
 		position: "absolute",
 		bottom: 0,
 		left: 0,
+	},
+	{
+		src: Girl,
+		alt: "girl-image",
+		position: "absolute",
+		bottom: 0,
+		right: 0,
 	},
 ];
 
@@ -81,7 +81,7 @@ const Activity = () => {
 						/>
 					</article>
 					<article className="flex justify-between items-center w-[95%]">
-						<Link href="/">
+						<Link href="/" style={{ zIndex: 10 }}>
 							<Button
 								text="Back"
 								customClasses="button--default "
