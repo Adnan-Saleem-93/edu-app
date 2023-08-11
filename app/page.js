@@ -52,14 +52,11 @@ export default function Home() {
 						/>
 					</article>
 					<article className="flex justify-between items-center w-[97.5%]">
-						<Button
-							text="Back"
-							customClasses="button--default tracking-widest"
-						/>
-						<Link href="activity">
+						<Button text="Back" customClasses="button--default" />
+						<Link href="/activity">
 							<Button
 								text="Next"
-								customClasses="button--default tracking-widest uppercase"
+								customClasses="button--default uppercase"
 								// clickAction={() =>
 								// 	push("/activity", undefined, { shallow: true })
 								// }
