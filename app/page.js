@@ -8,10 +8,9 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Beach from "/assets/SVGs/beach.svg";
 import VectorGreen from "/assets/SVGs/vector-green.svg";
-import Link from "next/link";
 
 export default function Home() {
-	const { push } = useRouter();
+	const router = useRouter();
 	return (
 		<main className="absolute top-0 justify-between left-0 min-w-full min-h-screen">
 			<ExampleLayout>
@@ -53,15 +52,12 @@ export default function Home() {
 					</article>
 					<article className="flex justify-between items-center w-[97.5%]">
 						<Button text="Back" customClasses="button--default" />
-						<Link href="/activity">
-							<Button
-								text="Next"
-								customClasses="button--default uppercase"
-								// clickAction={() =>
-								// 	push("/activity", undefined, { shallow: true })
-								// }
-							/>
-						</Link>
+
+						<Button
+							text="Next"
+							customClasses="button--default uppercase"
+							clickAction={() => router.replace("/activity")}
+						/>
 					</article>
 				</section>
 			</ExampleLayout>
