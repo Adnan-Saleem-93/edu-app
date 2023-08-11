@@ -58,7 +58,9 @@ export default function Home() {
 						<Button
 							text="Next"
 							customClasses="button--default tracking-widest uppercase"
-							clickAction={() => push("/activity")}
+							clickAction={() =>
+								push("/activity", undefined, { shallow: true })
+							}
 						/>
 					</article>
 				</section>

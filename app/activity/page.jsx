@@ -78,7 +78,7 @@ const Activity = () => {
 						<Button
 							text="Back"
 							customClasses="button--default "
-							clickAction={() => push("/")}
+							clickAction={() => push("/", undefined, { shallow: true })}
 						/>
 						<Button text="Next" customClasses="button--default uppercase" />
 					</article>
