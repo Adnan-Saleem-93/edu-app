@@ -4,13 +4,30 @@ import Button from "@/components/Button";
 import Header from "@/components/Header";
 import Text from "@/components/Text";
 import ExampleLayout from "@/layouts/Example-Layout";
-import Image from "next/image";
 import { useRouter } from "next/navigation";
 import Beach from "/assets/SVGs/beach.svg";
 import VectorGreen from "/assets/SVGs/vector-green.svg";
+import Link from "next/link";
+import ImageComponent from "@/components/Image-Component";
+
+const images = [
+	{
+		src: Beach,
+		alt: "beach",
+		position: "relative",
+		zIndex: -1,
+	},
+	{
+		src: VectorGreen,
+		alt: "green-vector",
+		position: "absolute",
+		zIndex: -1,
+		bottom: 0,
+		right: 0,
+	},
+];
 
 export default function Home() {
-	const router = useRouter();
 	return (
 		<main className="absolute top-0 justify-between left-0 min-w-full min-h-screen">
 			<ExampleLayout>
@@ -21,20 +38,9 @@ export default function Home() {
 						<Header text="Activity 3" />
 					</article>
 					<article className="mt-8 mb-12">
-						{/* Beach Image */}
-						<Image
-							src={Beach}
-							alt="beach"
-							className={`relative flex-shrink-0`}
-							style={{ zIndex: -1 }}
-						/>
-						{/* Green Vector Image */}
-						<Image
-							src={VectorGreen}
-							alt="green-vector"
-							className={`absolute flex-shrink-0`}
-							style={{ zIndex: -1, bottom: 0, right: 0 }}
-						/>
+						{images.map((image, index) => {
+							return <ImageComponent key={index} {...image} />;
+						})}
 					</article>
 					<article className="w-[90%]">
 						<Text
@@ -53,11 +59,9 @@ export default function Home() {
 					<article className="flex justify-between items-center w-[97.5%]">
 						<Button text="Back" customClasses="button--default" />
 
-						<Button
-							text="Next"
-							customClasses="button--default uppercase"
-							clickAction={() => router.push("/activity")}
-						/>
+						<Link href="/activity">
+							<Button text="Next" customClasses="button--default uppercase" />
+						</Link>
 					</article>
 				</section>
 			</ExampleLayout>
